@@ -1,5 +1,6 @@
-BASE_PATH=/Users/albertdupre/Documents/node.js/bookdownload
+BASE_PATH=~/scripts/bookdownload
 export NODE_PATH=$NODE_PATH:$BASE_PATH/node_modules
+
 if [ -n $1 ]
 then
     node -r @std/esm $BASE_PATH/main.mjs $* 
